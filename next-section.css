@@ -1,0 +1,69 @@
+
+/* main 컨테이너 내부의 next video section */
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-right:40px;
+    margin-left:15px;
+}
+
+section .next{
+    margin-left:20px;
+}
+
+section .side-video-container{
+    display: flex;
+    position: relative;
+    margin-bottom:20px;
+    padding-bottom: 25px;
+}
+
+
+section .sideVideo{
+    flex:1 1 40%;
+    cursor: pointer;
+    width : 100%;
+    margin-right: 15px;
+}
+
+section .side-detail{
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    margin-right:20px;
+}
+
+
+.side-title{
+    cursor: pointer;
+    margin-bottom:10px;
+    font-weight: bold;
+    font-size:18px;
+}
+
+.side-name, .side-info{
+    margin-bottom: 5px;
+    color:#737373;
+}
+
+
+.side-video-container .side-report{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 5px;
+    right: 0px;
+    font-size:18px;
+    color:#737373;
+    display: none;
+}
+
+.side-video-container:hover .side-report{
+    display: block;
+}
+
+.side-video-container:nth-of-type(1){
+    border-bottom: 1px solid #bfbfbf;
+}
+

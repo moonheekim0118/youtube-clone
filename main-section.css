@@ -1,0 +1,133 @@
+
+/*header 아래부분 */
+
+main{
+    display: flex;
+    padding: 20px 50px;
+}
+
+/* 동영상 + 커멘트 섹션 */
+main .main-container{
+    width:100%;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:30px;
+    margin-right: 10px;
+}
+
+/*
+ 동영상 섹션 
+*/
+.main-container .video-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container .video{
+    width: 100%;
+    height: 50%;
+}
+
+.video-container .title {
+    margin : 20px 0;
+    font-size: 28px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.video-container .video-controller{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #bfbfbf ;
+    
+}
+
+.video-container ㄴ.detail{
+    color:#737373;
+    font-size:18px;
+}
+
+.video-container .icons button{
+    background-color: transparent;
+    color:#8f8f8f;
+    border: none;
+    font-size: 20px;
+    margin-left:10px;
+}
+
+.video-container .icons button p{
+    margin-left:10px;
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.video-container .author-detail{
+    margin-top:25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container .author-logo{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height:70px;
+    flex-shrink: 0;
+}
+
+.video-container .subscribe{
+    cursor: pointer;
+    width:135px;
+    height:50px;
+}
+.video-container .author-container{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #bfbfbf ;
+
+}
+.video-container .author-info{
+    display: flex;
+}
+.video-container .name{
+    display: block;
+    margin-top:20px;
+    margin-bottom: 5px;
+    margin-left:20px;
+    font-weight: bold;
+}
+.video-container.subscribers{
+    display: block;
+    margin-left:20px;
+    color: #737373;
+}
+
+.video-container .contents-detail{
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.video-container .show-more{
+    margin-left:20px;
+    background-color: transparent;
+    border: none;
+    color:#737373;
+    padding:0;
+    font-size:15px;
+    font-weight: bold;
+}
+
+
+@media(max-width:1000px){
+    .detail{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+
+}

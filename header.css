@@ -1,0 +1,86 @@
+/************** header ***************/
+header{
+    background-color: #fff;
+    width:100%;
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+header .menu{
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header .toggle{
+    position: relative;
+    top:5px;
+    background-color: transparent;
+    border: none;
+}
+
+header .main-logo{
+    cursor: pointer;
+    left:60px;
+    width: 100px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+header .search-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 1000px;
+    flex-wrap: nowrap;
+}
+
+header .search-box{
+    border: 1px solid #cccccc;
+    width: 75%;
+    height: 40px;
+    font-size:20px;
+    padding : 10px;
+    -webkit-box-shadow: inset 0px 8px 11px -14px rgba(102,102,102,0.92);
+    -moz-box-shadow: inset 0px 8px 11px -14px rgba(102,102,102,0.92);
+    box-shadow: inset 0px 8px 11px -14px rgba(102,102,102,0.92);
+}
+
+header .search-icon{
+    border: 1px solid #cccccc;
+    background-color:	#f2f2f2;
+    width : 75px;
+    height: 40px;
+    padding: 10px 0;
+    border-left:none;
+    font-size: 15px;
+    color:#999999;
+}
+
+header .customer{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 250px;
+    flex-wrap: nowrap;
+}
+
+header .customer button{
+    background-color: transparent;
+    border: none;
+    color: 	#737373;
+    font-size: 20px;
+}
+header .user-logo{
+    cursor: pointer;
+    width:45px;
+    border-radius: 50%;
+}
+
+@media(max-width:700px){
+    .search-tab{
+        display: none;
+    }
+}

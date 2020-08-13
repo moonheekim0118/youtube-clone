@@ -1,0 +1,136 @@
+
+/* comment section*/
+
+.comment-info{ 
+    margin-top: 35px;
+}
+
+.comment-info .comment-num{
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.comment-info .sort{
+    background:transparent;
+    border:none;
+    color:#737373;
+    font-size: 20px;
+}
+
+.comment-info .sort i{
+    margin-right: 10px;
+}
+
+.comment-container .comment-form{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.comment-container .commenter-logo{
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.comment-container .comment-form form{
+    position: relative;
+    width:100%;
+    margin-left:20px;
+}
+
+.comment-container .comment-form input{
+    display: block;
+    width:100%;
+    font-size: 18px;
+    padding: 5px 10px;
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid #bfbfbf ;
+    margin-bottom: 10px;
+}
+
+.comment-container .comment-form .add{
+    position: absolute;
+    right:0;
+    border:none;
+    font-size: 18px;
+    margin-top:5px;
+    background-color: #1a75ff;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.comment-container .comment-form .cancle{
+    position: absolute;
+    right: 160px;
+    font-size: 18px;
+    color:#737373;
+    margin-top:5px;
+    border: none;
+    background-color: transparent;
+    padding: 10px 5px;
+}
+
+.comment-container .comment-list{
+    margin-top:30px;
+    
+}
+
+
+
+.comment-section{
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-section .comment-contetns{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.comment-section .commenter-logo{
+    width:75px;
+}
+
+.comment-section .comment-name{
+    font-weight: bold;
+}
+
+.comment-section .comment-date{
+    color: #737373;
+}
+
+.comment-section .comment-detail button{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color:#737373;
+    margin-right:10px;
+
+}
+.comment-section .comment-detail{
+    margin-left:20px;
+}
+.comment-section .comment-like i{
+    margin-right:5px
+}
+
+.comment-section .report {
+    position: absolute;
+    top : 20px;
+    right:0px;
+    display: none;
+}
+
+/*각 커멘트 섹션에 hover를 하면 보인다*/
+.comment-section:hover .report{
+    display: block;
+}

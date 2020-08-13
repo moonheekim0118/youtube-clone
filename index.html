@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUTUBE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main-section.css">
+    <link rel="stylesheet" href="comment-section.css">
+    <link rel="stylesheet" href="next-section.css">
+    <link rel="stylesheet" href="navigation.css">
+</head>
+<body>
+    <header>
+       <div class="menu">
+            <button id="toggle" class="toggle">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <img src="images/logo.png" alt="YOUTUBE" id="main-logo" class="main-logo">
+       </div>
+       <div class="search-tab">
+            <input type="text" name="search-box" id="search-box" class="search-box">
+            <label for="search-box"></label>
+            <button id="search-icon" class="search-icon">
+                <i class="fas fa-search"></i>
+            </button>
+       </div>
+        <div class="customer">
+            <button id="creat-video" class="creat-video">
+                <i class="fas fa-video"></i>
+            </button>
+            <button id="apps" class="apps">
+                <i class="fas fa-th"></i>
+            </button>
+            <button id="noti" class="noti">
+                <i class="fas fa-bell"></i>
+            </button>
+            <img src="images/user.jpg" alt="userlogo" id="user-logo" class="user-logo">
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="video-container">
+                <!--video 대체 추후 변경 필요-->
+                <img src="images/video.webp" alt="" class="video" id="video">
+                 <!--타이틀-->
+                 <div class="title">learning JavaScript</div>
+                <div class="video-controller"> 
+                    <!--조회수, 생성일-->
+                    <div class="detail">5,865,282 views Dec 23, 2018</div>
+                    <!--그 외 아이콘들..-->
+                   <div class="icons">
+                        <button class="thums-up" id="thums-up">
+                            <i class="fas fa-thumbs-up"></i>
+                            <p>1.5K</p>
+                        </button>
+                        <button id="thums-down" class="thums-down">
+                            <i class="fas fa-thumbs-down"></i>
+                            <p>2</p>
+                        </button>
+                        <button id="share" class="share">
+                            <i class="fas fa-share"></i>
+                            <p>SHARE</p>
+                        </button>
+                        <button id="save" class="save">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <p>SAVE</p>
+                        </button>
+                        <button class="cs" id="cs">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </button>
+                   </div>
+                </div>
+                <div class="author-container">
+                    <div class="author-detail">
+                        <div class="author-info">
+                            <img src="images/user.jpg" alt="" class="author-logo">
+                            <div class="author-description">
+                                 <span class="name" id="name">JSConf</span>
+                                 <span class="subscribers">324K subscribers</span>
+                                 <p class="contents-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. At culpa minima quisquam quam nam voluptatem</p>
+                                <button class="show-more" id="show-more">
+                                    SHOW MORE
+                                </button>
+                            </div>
+                        </div>
+                        <img src="images/subscribe.png" alt="" class="subscribe">
+                    </div>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="comment-info">
+                    <span class="comment-num" id="comment-num">984 Comments</span>
+                    <button class="sort" id="sort">
+                        <i class="fas fa-sort-amount-down"></i>
+                        SORT BY
+                    </button>
+                </div>
+                <div class="comment-form">
+                    <img src="images/user.jpg" class="commenter-logo">
+                    <form>
+                        <input type="text" name="comment" id="comment" placeholder="Add a public comment...">
+                        <button class="cancle">CANCLE</button>
+                        <button type="submit" class="add">COMMENT</button>
+                    </form>
+                </div>
+                <div class="comment-list">
+                    <div class="comment-section">
+                        <img src="images/user.jpg" class="commenter-logo">
+                        <div class="comment-detail">
+                            <span class="comment-name" id="comment-name" >User1</span>
+                            <span class="comment-date" id="comment-date">1 month ago</span>
+                            <p class="comment-contetns">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sunt dicta minus laboriosam, eligendi ut asperiores, cumque excepturi delectus officia odit, illum fuga! Numquam molestiae magni qui. Doloribus, repudiandae reprehenderit?</p>
+                            <button class="report" id="report">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <button class="comment-like" id="comment-like">
+                                <i class="fas fa-thumbs-up"></i>
+                                62 </button>
+                            <button class="comment-dislike" id="comment-dislike">
+                                <i class="fas fa-thumbs-down"></i>
+                            </button>
+                            <button class="reply" id="reply">
+                                REPLY
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <p class="next">UP Next</p>
+            <div class="side-video-container">
+                <img src="images/video.webp" alt="" class="sideVideo">
+
+                <div class="side-detail">
+                    <sp class="side-title">
+                        lofi hip hop radio -beats to relax/study to
+                    </sp>
+                    <span class="side-name">ChilledCow</span>
+                    <span class="side-info">427K views 5 months ago</span>
+                </div>
+                <button class="side-report" id="side-report">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+    <nav>
+       <div class="nav-container">
+            <div class="nav-menu" id="nav-menu">
+                <button id="nav-toggle" class="nav-toggle">
+                <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <img src="images/logo.png" alt="YOUTUBE" id="main-logo" class="main-logo">
+            </div>
+        <ul class="category">
+            <li>
+                    <i class="fas fa-home"></i>Home
+            </li>
+            <li>
+                    <i class="fas fa-fire"></i>Trending
+            </li>
+            <li>
+                    <i class="fab fa-youtube"></i>Subscrptions
+            </li>
+            <li>
+                <i class="fas fa-photo-video"></i>Library
+            </li>
+            <li>
+                <i class="fas fa-history"></i>History
+            </li>
+            <li>
+                <i class="fas fa-clock"></i>Wathch later
+            </li>
+            <li>
+                <i class="fas fa-thumbs-up"></i>Liked videos
+            </li>
+        </ul>
+            <ul class="subscriptions">
+                <p>SUBSCRIPTIONS</p>
+                <li> asmr soup</li>
+                <li>ASMR rooms</li>
+                <li>Majestic Casual</li>
+                <li>Korantemaa</li>
+                <li>Alabama Shakes</li>
+                <li>ShibSibs</li>
+            </ul>
+         <span class="copyright">2020 Google LLC</span>
+       </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>
